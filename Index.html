@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explorador de Cócteles</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="text-gray-900">
+
+    <header class="bg-red-700 text-white p-4 shadow-md">
+        <div class="container mx-auto">
+            <h1 class="text-2xl font-bold">Explorador de Cócteles 🍹 <span style="float: right;">M.D.T.N (UNIMET)</span></h1>
+        </div>
+    </header>
+
+    <main class="container mx-auto p-4 md:p-6">
+
+        <section id="categories-section" class="info-card">
+            <h2 class="text-xl font-semibold mb-4">Categorías de Cócteles</h2>
+            <div id="categories-display" class="flex flex-wrap justify-center">
+                <p class="loading-text">Cargando categorías...</p>
+            </div>
+        </section>
+
+        <section id="search-section" class="info-card">
+            <h2 class="text-xl font-semibold mb-4">Buscar Cóctel</h2>
+            <div class="flex items-center">
+                <input type="text" id="search-input" placeholder="Ej: Margarita, Mojito...">
+                <button id="search-button">Buscar</button>
+                <button id="random-button">Aleatorio</button>
+            </div>
+        </section>
+
+        <section id="cocktail-section" class="info-card">
+            <h2 class="text-xl font-semibold mb-4">Detalles del Cóctel</h2>
+            <div id="cocktail-display">
+                <p class="loading-text">Selecciona una categoría para ver los cócteles.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="text-center p-4 mt-6 text-gray-600 text-sm">
+        Datos proporcionados por <a href="https://www.thecocktaildb.com/" target="_blank" rel="noopener noreferrer">TheCocktailDB.com</a>. Página creada con ayuda de IA.<br>
+        Para mis amigos los borrachos de la UNIMET la Grandiosa MDTN.<br>
+        Mi firma de creador: Andres Montbrun
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
